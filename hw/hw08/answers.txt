@@ -17,11 +17,13 @@ Problem 1:
 
 Problem 2:
 
-...
+GC-content: 0.4302926296296296
 
 Problem 3:
 
-...
+When “seq = ‘’” and “linenum = 0” are commented out, a NameError is thrown for linenum, because when “linenum = linenum + 1” is called the program doesn’t know what type and value linenum is. 
+
+When “gc_count = 0” is commented out, a NameError also occurs. 
 
 Problem 4:
 
