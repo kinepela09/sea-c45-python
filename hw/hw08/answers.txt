@@ -27,7 +27,8 @@ When “gc_count = 0” is commented out, a NameError also occurs.
 
 Problem 4:
 
-...
+GC-content: 0.4302926296296296
+AT-content: 0.5689938518518518
 
 Problem 5:
 
