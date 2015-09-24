@@ -85,22 +85,21 @@ for bp in seq:
         not_gcat = not_gcat + 1
 
 # Total sum of g, c, a, t _count's
-gcat_sum = g_count + c_count + a_count + t_count + not_gcat
-
-print(not_gcat)
+gcatx_sum = g_count + c_count + a_count + t_count + not_gcat
 
 # divide the gc_count by the total_count
 gc_content = float(gc_count) / total_count
 at_content = float(at_count) / total_count
 
 # Print the answer
+print('AT/GC ratio:', at_content / gc_content)
 print('GC-content:', gc_content)
+print('AT-content:', at_content)
 print('G-content:', g_count)
 print('C-content:', c_count)
-print('AT-content:', at_content)
 print('A-content:', a_count)
 print('T-content:', t_count)
 
 # Sanity check
-print(total_count, len(seq), gcat_sum)
-print(total_count == len(seq) == gcat_sum)
+print(total_count, len(seq), gcatx_sum)
+print(total_count == len(seq) == gcatx_sum)
