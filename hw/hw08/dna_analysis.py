@@ -58,6 +58,8 @@ c_count = 0
 a_count = 0
 t_count = 0
 
+not_gcat = 0
+
 # for each base pair in the string,
 for bp in seq:
     # increment the total number of bps we've seen
@@ -79,7 +81,13 @@ for bp in seq:
             a_count = a_count + 1
         else:
             t_count = t_count + 1
+    else:
+        not_gcat = not_gcat + 1
 
+# Total sum of g, c, a, t _count's
+gcat_sum = g_count + c_count + a_count + t_count + not_gcat
+
+print(not_gcat)
 
 # divide the gc_count by the total_count
 gc_content = float(gc_count) / total_count
@@ -92,3 +100,7 @@ print('C-content:', c_count)
 print('AT-content:', at_content)
 print('A-content:', a_count)
 print('T-content:', t_count)
+
+# Sanity check
+print(total_count, len(seq), gcat_sum)
+print(total_count == len(seq) == gcat_sum)

@@ -42,7 +42,11 @@ T-content: 7661547
 
 Problem 6:
 
-...
+sanityCheck (which returns whether the total_count, len(seq), and the sum of G, C, A, T counts are equal) failed for test-high-gc-1.fastq where the GCAT individual sum equaled 39840 whilst total_count and len(seq) equaled 4000.
+
+After looking at the sequence in test-high-gc-1.fastq, I saw some characters that were not G, C, A, T— most N’s.
+
+So I added an else statement that incremented the variable not_gcat and added it to the gcatx_sum, where x are characters not G, C, A, or T.
 
 Problem 7:
 
