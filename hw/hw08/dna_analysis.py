@@ -91,6 +91,14 @@ gcatx_sum = g_count + c_count + a_count + t_count + not_gcat
 gc_content = float(gc_count) / total_count
 at_content = float(at_count) / total_count
 
+def contentLevel(gcCount):
+    if gcCount > 60:
+        return "High"
+    elif gcCount < 40:
+        return "Low"
+    else:
+        return "Moderate"
+
 # Print the answer
 print('AT/GC ratio:', at_content / gc_content)
 print('GC-content:', gc_content)
@@ -99,6 +107,8 @@ print('G-content:', g_count)
 print('C-content:', c_count)
 print('A-content:', a_count)
 print('T-content:', t_count)
+
+print(contentLevel(gc_content), "GC content")
 
 # Sanity check
 print(total_count, len(seq), gcatx_sum)

@@ -61,7 +61,18 @@ T-content: 7661547
 
 Problem 8:
 
-...
+Jennifers-MacBook-Air:hw08 groot$ python3 dna_analysis.py data/sample_1.fastq 
+AT/GC ratio: 1.3223416174746194
+GC-content: 0.4302926296296296
+AT-content: 0.5689938518518518
+G-content: 5738773
+C-content: 5879128
+A-content: 7701287
+T-content: 7661547
+Low GC content
+27000000 27000000 27000000
+True
+
 
 Collaboration:
 
