@@ -75,9 +75,13 @@ True
 
 
 Collaboration:
+Zero collaboration. 
 
-...
 
 Reflection:
+Mostly learned proper Python syntax by trial and error. 
+It would have been nice to be familiar with Diff Checker, didn’t really figure out how to use it. 
+The assignment was very easy to follow along— good instructions.
 
-...
+
+
