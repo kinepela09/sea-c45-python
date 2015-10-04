@@ -124,6 +124,14 @@ def print_donor_names(dl):
 
 
 def create_report():
-    pass
+    print("{0:<15}".format("Name"), "{0:<10}".format("Total"), "{0:<4}".format("#"), "{0:<10}".format("Average"))
+    for i in donor_list:
+        name = i[0]
+        total = donation_sum(i[0].upper(), donor_list)
+        donation_count = len(i[1])
+        print("{0:<15}".format(name), "{0:<10}".format(total), "{0:<4}".format(donation_count), "{0:<10}".format(total/donation_count))
+    print()
 
-main_menu()
+
+if __name__ == '__main__':
+    main_menu()
