@@ -91,6 +91,10 @@ def get_donation_amt(d, dl):
 
     donation_amt = input("Enter donation amount: ")
 
+    if donation_amt.upper() == "QUIT":
+        print("Returning to main menu")
+        main_menu()
+
     try:
         donation_amt = float(donation_amt)
         add_donation(d, dl, donation_amt)
