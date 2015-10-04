@@ -52,14 +52,10 @@ def thank_you():
         if name_in_list(thank_you_input_str, donor_list):
             print(name_in_list(thank_you_input_str, donor_list))
         else:
-            print("name not in list. need to add")
             donor_list.append([thank_you_input, []])
-            last = len(donor_list) - 1
-            print(donor_list[last])
 
         get_donation_amt(thank_you_input_str, donor_list)
         total = donation_sum(thank_you_input_str, donor_list)
-        print(total)
         thank_you_template(thank_you_input, total)
 
 
@@ -86,7 +82,6 @@ def donation_sum(d, dl):
     for i in dl:
         if d == i[0].upper():
             for j in i[1]:
-                print(j)
                 amt = amt + j
 
     return amt
