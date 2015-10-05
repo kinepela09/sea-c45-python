@@ -1,5 +1,5 @@
-Jennifer Nguyen
-===============
+Jennifer N
+==========
 
 Brief Bio
 ---------
