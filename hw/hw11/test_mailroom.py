@@ -36,7 +36,11 @@ def test_name_quit():
 
 
 def test_name_donate():
+<<<<<<< HEAD
     output, error = process(b'T\nbill gates\n200\n\nquit')
+=======
+    output, error = process(b'T\nbill gates\n200\nquit')
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc
 
     if "eoferror" in error.decode().lower():
         raise AssertionError("Quit unsuccessful")
@@ -51,7 +55,11 @@ def test_name_donate():
 
 
 def test_name_report():
+<<<<<<< HEAD
     output, error = process(b'T\nbill gates\n200\nR\n\nquit')
+=======
+    output, error = process(b'T\nbill gates\n200\nR\nquit')
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc
 
     if "eoferror" in error.decode().lower():
         raise AssertionError("Quit unsuccessful")

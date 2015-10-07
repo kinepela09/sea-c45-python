@@ -29,6 +29,12 @@ Homework review
 
 http://stackoverflow.com/questions/404795/lbyl-vs-eafp-in-java
 
+<<<<<<< HEAD
+=======
+* Line Indentations
+
+* 
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc
 
 Other Homework Questions?
 
@@ -323,7 +329,11 @@ created.
 
     It gets the arguments passed when you *call* the class object:
 
+<<<<<<< HEAD
     .. code-block:: python
+=======
+    .. code-block:: python  
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc
 
         Point(x, y)
 
@@ -378,10 +388,17 @@ Anything assigned in the class scope is a class attribute
     Note: the methods defined by ``def`` are class attributes as well.
 
     .. container::
+<<<<<<< HEAD
 
         The class is one namespace, the instance is another.
 
         .. code-block:: python
+=======
+    
+        The class is one namespace, the instance is another.
+
+        .. code-block:: python  
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc
 
             class Point(object):
                 size = 4
@@ -402,7 +419,11 @@ Typical methods:
 .. rst-class:: build
 .. container::
 
+<<<<<<< HEAD
     .. code-block:: python
+=======
+    .. code-block:: python  
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc
 
         class Circle(object):
             color = "red"
@@ -613,7 +634,11 @@ More subclassing
 
 You can also call the superclass' other methods:
 
+<<<<<<< HEAD
 .. code-block:: python
+=======
+.. code-block:: python  
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc
 
     class Circle(object):
     ...
