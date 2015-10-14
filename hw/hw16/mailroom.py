@@ -58,6 +58,8 @@ def thank_you():
 
 def thank_you_template(d, t):
 
+    outfile = open((d.replace(' ', '_') + '.txt'), 'w')
+
     print()
     print("Dear %s," % d)
     print()
@@ -72,6 +74,8 @@ def thank_you_template(d, t):
     print()
     print("Director, F.H.W.")
     print()
+
+    outfile.close
 
 
 def donation_sum(d):
@@ -118,7 +122,7 @@ def create_report():
         name = i
         total = donation_sum(i)
         donation_count = len(donor_list[i])
-        print("{0:<15}".format(name), "${0:<10}".format(total), "{0:<4}".format(donation_count), "${0:<10}".format(total/donation_count))
+        print("{0:<15}".format(name), "${0:<10}".format(total), "{0:<4}".format(donation_count), "${0:<10}".format(total / donation_count))
     print()
 
 
