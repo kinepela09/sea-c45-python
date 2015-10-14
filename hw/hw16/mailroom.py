@@ -52,11 +52,11 @@ def thank_you():
             donor_list[thank_you_input] = []
 
         get_donation_amt(thank_you_input)
-        total = donation_sum(thank_you_input)
-        thank_you_template(thank_you_input, total)
+        donation = last_donation(thank_you_input)
+        thank_you_template(thank_you_input, donation)
 
 
-def thank_you_template(d, t):
+def thank_you_template(d, donation):
 
     outfile = open((d.replace(' ', '_') + '.txt'), 'w')
 
@@ -66,7 +66,7 @@ def thank_you_template(d, t):
     print("Thank you so much for your kind donation of $%s. We here at "
             "the Foundation for Homeless Whales greatly appreciate it. "
             "Your money will go towards creating new oceans on the moon for"
-            "whales to live in." % format(t, '.2f'))
+            "whales to live in." % format(donation, '.2f'))
     print()
     print("Thanks again,")
     print()
@@ -84,6 +84,11 @@ def donation_sum(d):
         amt = amt + donor_list[d][i]
 
     return amt
+
+
+def last_donation(d):
+
+    return int(donor_list[d][len(donor_list[d]) - 1])
 
 
 def get_donation_amt(d):
