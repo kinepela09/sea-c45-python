@@ -1111,6 +1111,8 @@ green'.
 
 When all your tests are passing, you've completed the job.
 
+<<<<<<< HEAD
+=======
 
 Homework
 ========
@@ -1192,3 +1194,4 @@ the main class repo,
 titled ``Task 20 pull request from Your Name`` where you should substitute your name for ``Your Name``.
 
 Finally, submit your assignment in Canvas by giving the URL of the pull request.
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc

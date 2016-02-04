@@ -17,6 +17,10 @@ Review/Questions
     .. rst-class:: build
 
         * Dictionaries
+<<<<<<< HEAD
+        * String Formatting
+=======
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc
         * Exceptions
         * Files, etc.
 
@@ -554,6 +558,27 @@ All the stuff in os.path and more:
     junkfile.txt
     ...
 
+<<<<<<< HEAD
+Puzzle and Mid-point Activities
+===============================
+
+* Check in attendance.
+* Copy and paste your HW 12 (Dictionary and Files) homework code from
+Interactive Python textbook into Canvas.
+* Puzzle: Fizzbuzz
+
+* Look up the ``%``  operator. What is the value of the following?
+
+  * ``10 % 7 == 3``
+  * ``14 % 7 == 0``
+
+* Write a program that prints the numbers from 1 to 100 inclusive. But for
+  multiples of three print "Fizz" instead of the number and for the multiples
+  of five print "Buzz". For numbers which are multiples of both three and five
+  print "FizzBuzz" instead.
+
+=======
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc
 
 Advanced Argument Passing
 =========================
@@ -1304,6 +1329,8 @@ Can also use keyword arguments
     This turns out to be very handy!
 
 
+<<<<<<< HEAD
+=======
 Homework
 ========
 
@@ -1659,6 +1686,7 @@ titled ``Task 16 pull request from Your Name`` where you should substitute your 
 
 Finally, submit your assignment in Canvas by giving the URL of the pull request.
 
+>>>>>>> 7175cb62b811746b468700287fd21e68df6465dc
 Recommended Reading
 ---------------------
 
