@@ -1,0 +1,87 @@
+Name: Jennifer N
+CodeFellows Python F2
+SEA-C45
+Homework 8
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+
+GC-content: 0.4302926296296296
+
+Problem 3:
+
+When “seq = ‘’” and “linenum = 0” are commented out, a NameError is thrown for linenum, because when “linenum = linenum + 1” is called the program doesn’t know what type and value linenum is. 
+
+When “gc_count = 0” is commented out, a NameError also occurs. 
+
+Problem 4:
+
+GC-content: 0.4302926296296296
+AT-content: 0.5689938518518518
+
+Problem 5:
+
+GC-content: 0.4302926296296296
+G-content: 5738773
+C-content: 5879128
+AT-content: 0.5689938518518518
+A-content: 7701287
+T-content: 7661547
+
+
+Problem 6:
+
+sanityCheck (which returns whether the total_count, len(seq), and the sum of G, C, A, T counts are equal) failed for test-high-gc-1.fastq where the GCAT individual sum equaled 39840 whilst total_count and len(seq) equaled 4000.
+
+After looking at the sequence in test-high-gc-1.fastq, I saw some characters that were not G, C, A, T— most N’s.
+
+So I added an else statement that incremented the variable not_gcat and added it to the gcatx_sum, where x are characters not G, C, A, or T.
+
+Problem 7:
+
+AT/GC ratio: 1.3223416174746194
+GC-content: 0.4302926296296296
+AT-content: 0.5689938518518518
+G-content: 5738773
+C-content: 5879128
+A-content: 7701287
+T-content: 7661547
+
+
+Problem 8:
+
+Jennifers-MacBook-Air:hw08 groot$ python3 dna_analysis.py data/sample_1.fastq 
+AT/GC ratio: 1.3223416174746194
+GC-content: 0.4302926296296296
+AT-content: 0.5689938518518518
+G-content: 5738773
+C-content: 5879128
+A-content: 7701287
+T-content: 7661547
+Low GC content
+27000000 27000000 27000000
+True
+
+
+Collaboration:
+Zero collaboration. 
+
+
+Reflection:
+Mostly learned proper Python syntax by trial and error. 
+It would have been nice to be familiar with Diff Checker, didn’t really figure out how to use it. 
+The assignment was very easy to follow along— good instructions.
+
+
+
